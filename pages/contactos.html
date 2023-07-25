@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | ATODOBARRO</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo logo" href="../index.html">
+            <img class="logo__img" src="../assets/images/logo.png" alt="logo de atodobarro">
+            <h1 class="logo__h1">ATODOBARRO</h1>
+        </a>
+        <nav class="header__navbar navbar">
+            <ul class="navbar__ul">
+                <li><a class="navbar__a" href="../index.html">Inicio</a></li>
+                <li><a class="navbar__a" href="./productos.html">Productos</a></li>
+                <li><a class="navbar__a" href="./clases.html">Clases</a></li>
+                <li><a class="navbar__a" href="./galeria.html">Galería</a></li>
+                <li><a class="navbar__a navbar__a--actual" href="./contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacts">
+            <div class="header-section">
+                <h2>Contactos</h2>
+            </div>
+            <div class="contacts-content">
+                <div class="location">
+                    <h3>¿Dónde estamos?</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3099.4856642492023!2d-67.54406855878696!3d-39.0270448044686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDAxJzM3LjQiUyA2N8KwMzInMjkuNCJX!5e0!3m2!1ses-419!2sar!4v1688566348187!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    
+                <form class="formulario" method="post">
+                    <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellido" required>
+                    <input type="email" name="email" id="email" placeholder="Correo" required>
+                    <input type="tel" name="tel" id="tel" placeholder="Teléfono" required>
+                    <textarea name="content" id="" cols="30" rows="11" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                    <input class="btn-submit" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">2023 - ©copyrigth</p>
+        <div class="footer__redes redes">
+            <a class="redes__a" href="https://www.facebook.com/mbatodobarro" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a class="redes__a" href="https://www.instagram.com/atodobarro/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a56ac5b1d3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
