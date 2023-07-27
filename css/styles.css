@@ -87,7 +87,7 @@ body {
 /* ------------------ Main ------------------ */
 main {
     background-color: #F2EAD3;
-    min-height: 85vh;
+    min-height: 87vh;
 }
 
 .header-section {
@@ -193,24 +193,32 @@ main {
     border-collapse: collapse;
 }
 
-.horarios thead {
+.horarios__thead {
     background-color: #3F2305;
     color: #F5F5F5;
 }
 
-.horarios thead th,
-.horarios tbody td {
+.horarios__th,
+.horarios__td {
     padding: .8rem 1rem;
     width: 7rem;
     border: 1px solid black;
 }
 
-.horarios td:nth-child(even) {
+.horarios__td:nth-child(even) {
     background-color: #F5F5F5;
 }
 
-.horarios td:nth-child(odd) {
+.horarios__td:nth-child(odd) {
     background-color: #DFD7BF;
+}
+
+.horarios__td--vacio {
+    display: none;
+}
+
+.horarios__th--vacio {
+    display: none;
 }
 
 /* ------------------ Galeria ------------------ */
@@ -306,6 +314,14 @@ main {
 
     .lista-imagenes {
         grid-template-columns:  repeat(2, minmax(auto, 400px));
+    }
+
+    .horarios__td--vacio {
+        display: table-cell;
+    }
+
+    .horarios__th--vacio {
+        display: table-cell;
     }
 }
 
