@@ -164,7 +164,7 @@ main {
     display: grid;
     grid-template-columns: minmax(250px, 400px);
     gap: 1.5rem;
-    justify-content: center;  
+    justify-content: center;
     margin: 2rem 1.5rem;
 }
 
@@ -239,42 +239,72 @@ main {
 
 /* ------------------ Contactos ------------------ */
 .contacts-content {
-    /* display: grid;
-    grid-template-columns: repeat(2, minmax(600px, 1fr)); */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 2rem;
-    justify-content: center;
-    padding: 2rem;
+    margin: 2rem 0;
 }
 
-#contacts .location {
+.location {
     box-sizing: border-box;
-    height: 500px;
+    width: 100%;
     border: 2px solid #F5F5F5;
-    min-width: 600px;
 }
 
-#contacts .location h3 {
+.location__h3 {
     background-color: #F5F5F5;
     padding: 1rem;
 }
 
-#contacts .location iframe {
+.location__iframe {
     width: 100%;
+    display: block;
 }
 
-#contacts form {
+.formulario {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "nombre"
+        "apellido"
+        "correo"
+        "telefono"
+        "contenido"
+        "btn-enviar";
     gap: 24px;
-    min-width: 600px;
-    min-height: 500px;
     background-color: #F5F5F5;
     padding: 32px;
 }
 
-#contacts form :is(input, textarea) {
+.formulario__nombre {
+    grid-area: nombre;
+}
+
+.formulario__apellido {
+    grid-area: apellido;
+}
+
+.formulario__correo {
+    grid-area: correo;
+}
+
+.formulario__telefono {
+    grid-area: telefono;
+}
+
+.formulario__contenido {
+    grid-area: contenido;
+}
+
+.formulario__btn-submit {
+    grid-area: btn-enviar;
+}
+
+.formulario__nombre,
+.formulario__apellido,
+.formulario__correo,
+.formulario__telefono,
+.formulario__contenido,
+.formulario__btn-submit {
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
@@ -283,12 +313,13 @@ main {
     border: 1px solid black;
 }
 
-#contacts form textarea {
-    grid-column: 1 / 3;
+.formulario__contenido {
+    grid-area: contenido;
     width: 100%;
 }
 
-#contacts .btn-submit {
+.formulario__btn-submit {
+    grid-area: btn-enviar;
     background-color: #3F2305;
     color: #F5F5F5;
     cursor: pointer;
@@ -313,7 +344,7 @@ main {
     }
 
     .lista-imagenes {
-        grid-template-columns:  repeat(2, minmax(auto, 400px));
+        grid-template-columns: repeat(2, minmax(auto, 400px));
     }
 
     .horarios__td--vacio {
@@ -322,6 +353,19 @@ main {
 
     .horarios__th--vacio {
         display: table-cell;
+    }
+
+    .contacts-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .formulario {
+        grid-template-areas:
+            "nombre apellido"
+            "correo telefono"
+            "contenido contenido"
+            "btn-enviar btn-enviar";
     }
 }
 
@@ -335,6 +379,12 @@ main {
     }
 
     .lista-imagenes {
-        grid-template-columns:  repeat(3, minmax(auto, 400px));
+        grid-template-columns: repeat(3, minmax(auto, 400px));
+    }
+
+    .contacts-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(400px, 700px));
+        justify-content: center;
     }
 }
