@@ -153,6 +153,8 @@ main {
 .article__img {
     width: 100%;
     max-width: 400px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
     display: block;
 }
 
@@ -184,6 +186,7 @@ main {
 .producto__img {
     display: block;
     width: 100%;
+    aspect-ratio: 1/1;
     object-fit: cover;
 }
 
@@ -240,6 +243,7 @@ main {
 .lista-imagenes__img {
     width: 100%;
     object-fit: cover;
+    aspect-ratio: 9/14;
     border-radius: 5px;
     box-shadow: 0 0 10px gray;
 }
@@ -300,6 +304,8 @@ main {
 
 .formulario__contenido {
     grid-area: contenido;
+    min-height: 250px;
+    resize: vertical;
 }
 
 .formulario__btn-submit {
@@ -318,11 +324,7 @@ main {
     padding: 12px;
     background-color: #ececec;
     border: 1px solid black;
-}
-
-.formulario__contenido {
-    grid-area: contenido;
-    width: 100%;
+    overflow: auto;
 }
 
 .formulario__btn-submit {
@@ -331,7 +333,6 @@ main {
     color: #F5F5F5;
     cursor: pointer;
     text-transform: uppercase;
-
 }
 
 @media screen and (min-width: 768px) {
