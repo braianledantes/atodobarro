@@ -1,0 +1,109 @@
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.location {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #F5F5F5;
+}
+
+.location__h3 {
+    background-color: #F5F5F5;
+    padding: 1rem;
+}
+
+.location__iframe {
+    width: 100%;
+    display: block;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas:
+        "nombre"
+        "apellido"
+        "correo"
+        "telefono"
+        "contenido"
+        "btn-enviar";
+    gap: 24px;
+    background-color: #F5F5F5;
+    padding: 32px;
+}
+
+.formulario__nombre {
+    grid-area: nombre;
+}
+
+.formulario__apellido {
+    grid-area: apellido;
+}
+
+.formulario__correo {
+    grid-area: correo;
+}
+
+.formulario__telefono {
+    grid-area: telefono;
+}
+
+.formulario__contenido {
+    grid-area: contenido;
+    min-height: 250px;
+    resize: vertical;
+}
+
+.formulario__btn-submit {
+    grid-area: btn-enviar;
+}
+
+.formulario__nombre,
+.formulario__apellido,
+.formulario__correo,
+.formulario__telefono,
+.formulario__contenido,
+.formulario__btn-submit {
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    background-color: #ececec;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.formulario__btn-submit {
+    grid-area: btn-enviar;
+    background-color: #3F2305;
+    color: #F5F5F5;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contacts-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .formulario {
+        grid-template-areas:
+            "nombre apellido"
+            "correo telefono"
+            "contenido contenido"
+            "btn-enviar btn-enviar";
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contacts-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(400px, 700px));
+        justify-content: center;
+    }
+}

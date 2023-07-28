@@ -1,0 +1,44 @@
+.horarios {
+    margin: 2rem auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.horarios__thead {
+    background-color: #3F2305;
+    color: #F5F5F5;
+}
+
+.horarios__th,
+.horarios__td {
+    padding: .8rem 1rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.horarios__td:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+.horarios__td:nth-child(odd) {
+    background-color: #DFD7BF;
+}
+
+.horarios__td--vacio {
+    display: none;
+}
+
+.horarios__th--vacio {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .horarios__td--vacio {
+        display: table-cell;
+    }
+
+    .horarios__th--vacio {
+        display: table-cell;
+    }
+}

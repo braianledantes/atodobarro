@@ -1,0 +1,30 @@
+.lista-imagenes {
+    display: grid;
+    grid-template-columns: minmax(auto, 400px);
+    justify-content: center;
+    gap: 1rem 2rem;
+    margin: 1.5rem;
+}
+
+.lista-imagenes__img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 9/14;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+@media screen and (min-width: 768px) {
+
+    .lista-imagenes {
+        grid-template-columns: repeat(2, minmax(auto, 400px));
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .lista-imagenes {
+        grid-template-columns: repeat(3, minmax(auto, 400px));
+    }
+}
