@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('./_inicio.css');
-@import url('./_productos.css');
-@import url('./_clases.css');
-@import url('./_galeria.css');
-@import url('./_contactos.css');
+@import './_inicio.css';
+@import './_productos.css';
+@import './_clases.css';
+@import './_galeria.css';
+@import './_contactos.css';
 
 * {
     margin: 0;
