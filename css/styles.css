@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import './_inicio.css';
-@import './_productos.css';
-@import './_clases.css';
-@import './_galeria.css';
-@import './_contactos.css';
 
 * {
     margin: 0;
@@ -70,20 +65,6 @@ body {
     text-shadow: 0 1px 1px #3F2305;
 }
 
-/* ------------------ Main ------------------ */
-main {
-    grid-area: main;
-    background-color: #F2EAD3;
-    min-height: 87vh;
-}
-
-.header-section {
-    background-color: #3F2305;
-    color: #F5F5F5;
-    text-align: center;
-    padding: 2rem;
-}
-
 /* ------------------ Footer ------------------ */
 .footer {
     grid-area: footer;
@@ -109,11 +90,309 @@ main {
     color: #3F2305;
 }
 
+/* ------------------ Main ------------------ */
+main {
+    grid-area: main;
+    background-color: #F2EAD3;
+    min-height: 87vh;
+}
+
+.header-section {
+    background-color: #3F2305;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* ------------------ Inicio ------------------ */
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion__h2 {
+    position: absolute;
+    max-width: 35rem;
+    color: #F5F5F5;
+    text-shadow: 0 0 5px black;
+    font-size: 64px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.presentacion__img {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+}
+
+.presentacion-2 {
+    background-color: #DFD7BF;
+    margin: 1.5rem;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.presentacion-2__h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.presentacion-2__articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.article {
+    position: relative;
+}
+
+.article__img {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    display: block;
+}
+
+.article__p {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    min-height: 33.3%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+/* ------------------ Productos ------------------ */
+.productos-list {
+    display: grid;
+    grid-template-columns: minmax(250px, 400px);
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 1.5rem;
+}
+
+.producto {
+    box-shadow: 0 3px 8px 1px gray;
+    background-color: grba(223, 215, 191, .3);
+    padding: 1rem 1rem 1.2rem;
+}
+
+.producto__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.producto__descripcion {
+    margin-top: 15px;
+    font-family: cursive;
+    text-align: center;
+}
+
+/* ------------------ Clases ------------------ */
+.horarios {
+    margin: 2rem auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.horarios__thead {
+    background-color: #3F2305;
+    color: #F5F5F5;
+}
+
+.horarios__th,
+.horarios__td {
+    padding: .8rem 1rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.horarios__td:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+.horarios__td:nth-child(odd) {
+    background-color: #DFD7BF;
+}
+
+.horarios__td--vacio {
+    display: none;
+}
+
+.horarios__th--vacio {
+    display: none;
+}
+
+/* ------------------ Galeria ------------------ */
+.lista-imagenes {
+    display: grid;
+    grid-template-columns: minmax(auto, 400px);
+    justify-content: center;
+    gap: 1rem 2rem;
+    margin: 1.5rem;
+}
+
+.lista-imagenes__img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 9/14;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* ------------------ Contactos ------------------ */
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.location {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #F5F5F5;
+}
+
+.location__h3 {
+    background-color: #F5F5F5;
+    padding: 1rem;
+}
+
+.location__iframe {
+    width: 100%;
+    display: block;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas:
+        "nombre"
+        "apellido"
+        "correo"
+        "telefono"
+        "contenido"
+        "btn-enviar";
+    gap: 24px;
+    background-color: #F5F5F5;
+    padding: 32px;
+}
+
+.formulario__nombre {
+    grid-area: nombre;
+}
+
+.formulario__apellido {
+    grid-area: apellido;
+}
+
+.formulario__correo {
+    grid-area: correo;
+}
+
+.formulario__telefono {
+    grid-area: telefono;
+}
+
+.formulario__contenido {
+    grid-area: contenido;
+    min-height: 250px;
+    resize: vertical;
+}
+
+.formulario__btn-submit {
+    grid-area: btn-enviar;
+}
+
+.formulario__nombre,
+.formulario__apellido,
+.formulario__correo,
+.formulario__telefono,
+.formulario__contenido,
+.formulario__btn-submit {
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    background-color: #ececec;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.formulario__btn-submit {
+    grid-area: btn-enviar;
+    background-color: #3F2305;
+    color: #F5F5F5;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
     .header {
         flex-direction: row;
         justify-content: space-between;
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .article__img {
+        max-width: 300px;
+    }
+
+    .productos-list {
+        grid-template-columns: repeat(2, minmax(250px, 400px));
+    }
+
+    .lista-imagenes {
+        grid-template-columns: repeat(2, minmax(auto, 400px));
+    }
+
+    .horarios__td--vacio {
+        display: table-cell;
+    }
+
+    .horarios__th--vacio {
+        display: table-cell;
+    }
+
+    .contacts-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .formulario {
+        grid-template-areas:
+            "nombre apellido"
+            "correo telefono"
+            "contenido contenido"
+            "btn-enviar btn-enviar";
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .article__img {
+        max-width: 450px;
+    }
+
+    .productos-list {
+        grid-template-columns: repeat(3, minmax(250px, 400px));
+    }
+
+    .lista-imagenes {
+        grid-template-columns: repeat(3, minmax(auto, 400px));
+    }
+
+    .contacts-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(400px, 700px));
+        justify-content: center;
     }
 }
