@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: $color-primary;
+    font-family: 'Permanent Marker', cursive;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}

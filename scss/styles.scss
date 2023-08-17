@@ -1,0 +1,20 @@
+@import "./utilities/variables";
+
+@import "./base/reset";
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main";
+@import "./layout/productos-list";
+@import "./layout/clases";
+@import "./layout/galeria";
+@import "./layout/contactos";
+
+@import "./components/bootstrap";
+@import "./components/header-section";
+@import "./components/producto";
+@import "./components/location";
+@import "./components/formulario";
+
+@import "./layout/mediaQ/media768";
+@import "./layout/mediaQ/media1024";

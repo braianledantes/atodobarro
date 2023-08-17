@@ -1,0 +1,62 @@
+.formulario {
+    display: grid;
+    grid-template-areas:
+        "nombre"
+        "apellido"
+        "correo"
+        "telefono"
+        "contenido"
+        "btn-enviar";
+    gap: 24px;
+    background-color: #F5F5F5;
+    padding: 32px;
+
+    .formulario__nombre {
+        grid-area: nombre;
+    }
+
+    .formulario__apellido {
+        grid-area: apellido;
+    }
+
+    .formulario__correo {
+        grid-area: correo;
+    }
+
+    .formulario__telefono {
+        grid-area: telefono;
+    }
+
+    .formulario__contenido {
+        grid-area: contenido;
+        min-height: 250px;
+        resize: vertical;
+    }
+
+    .formulario__btn-submit {
+        grid-area: btn-enviar;
+    }
+
+    .formulario__nombre,
+    .formulario__apellido,
+    .formulario__correo,
+    .formulario__telefono,
+    .formulario__contenido,
+    .formulario__btn-submit {
+        display: block;
+        font-family: Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 12px;
+        background-color: #ececec;
+        border: 1px solid black;
+        overflow: auto;
+    }
+
+    .formulario__btn-submit {
+        grid-area: btn-enviar;
+        background-color: #3F2305;
+        color: #F5F5F5;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}

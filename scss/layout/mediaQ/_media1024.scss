@@ -1,0 +1,19 @@
+@media screen and (min-width: 1024px) {
+    .article__img {
+        max-width: 450px;
+    }
+
+    .productos-list {
+        grid-template-columns: repeat(3, minmax($min-width-producto, $max-width-producto));
+    }
+
+    .lista-imagenes {
+        grid-template-columns: repeat(3, minmax(auto, 400px));
+    }
+
+    .contacts-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(400px, 700px));
+        justify-content: center;
+    }
+}
