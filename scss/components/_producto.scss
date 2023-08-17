@@ -1,0 +1,21 @@
+.producto {
+    min-width: $min-width-producto;
+    max-width: $max-width-producto;
+    box-shadow: 0 3px 8px 1px gray;
+    background-color: grba(223, 215, 191, .3);
+    padding: 1rem 1rem 1.2rem;
+    
+
+    .producto__img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    
+    .producto__descripcion {
+        margin-top: 15px;
+        font-family: cursive;
+        text-align: center;
+    }
+}

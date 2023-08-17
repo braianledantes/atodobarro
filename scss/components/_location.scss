@@ -1,0 +1,15 @@
+.location {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #F5F5F5;
+
+    .location__h3 {
+        background-color: #F5F5F5;
+        padding: 1rem;
+    }
+
+    .location__iframe {
+        width: 100%;
+        display: block;
+    }
+}

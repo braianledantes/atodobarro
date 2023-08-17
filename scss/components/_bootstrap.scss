@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #F2EAD3;
+}
+
+.navbar-brand img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link.active {
+    color: #3F2305;
+    text-shadow: 0 1px 1px #3F2305;
+}
+
+.presentacion__h2 {
+    text-shadow: 0 0 5px black;
+    font-size: 64px;
+}
+
+.presentacion .carousel-item img {
+    height: 92vh;
+}
+
+.presentacion-2,
+.opiniones {
+    background-color: #dfd7bf;
+}
+
+.opiniones h2 {
+    background-color: #3F2305;
+    color: #F5F5F5;
+}
+
+.footer-bootstrap {
+    background-color: #DFD7BF;
+}

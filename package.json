@@ -1,0 +1,25 @@
+{
+  "name": "atodobarro.com.ar",
+  "version": "1.0.0",
+  "description": "Un sitio que trata sobre el emprendimiento de mi madre que se dedica a la cerámica.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braianledantes/atodobarro.git"
+  },
+  "keywords": [
+    "cerámica",
+    "taller",
+    "cursos",
+    "curso"
+  ],
+  "author": "Braian Ledantes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braianledantes/atodobarro/issues"
+  },
+  "homepage": "https://github.com/braianledantes/atodobarro#readme"
+}

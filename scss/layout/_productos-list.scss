@@ -1,0 +1,7 @@
+.productos-list {
+    display: grid;
+    grid-template-columns: minmax($min-width-producto, $max-width-producto);
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}

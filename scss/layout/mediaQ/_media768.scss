@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .article__img {
+        max-width: 300px;
+    }
+
+    .productos-list {
+        grid-template-columns: repeat(2, minmax($min-width-producto, $max-width-producto));
+    }
+
+    .lista-imagenes {
+        grid-template-columns: repeat(2, minmax(auto, 400px));
+    }
+
+    .horarios {
+        .horarios__th--vacio {
+            display: table-cell;
+        }
+    
+        .horarios__td--vacio {
+            display: table-cell;
+        }
+    }
+
+    .contacts-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .formulario {
+        grid-template-areas:
+            "nombre apellido"
+            "correo telefono"
+            "contenido contenido"
+            "btn-enviar btn-enviar";
+    }
+}
