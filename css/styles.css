@@ -46,7 +46,6 @@ body {
 .redes__a {
   color: #000000;
 }
-
 .redes__a:hover {
   color: #3F2305;
 }
@@ -181,7 +180,6 @@ main {
   font-family: cursive;
   text-align: center;
 }
-
 .producto:hover {
   transition: transform 0.2s ease;
   transform: scale(1.01);

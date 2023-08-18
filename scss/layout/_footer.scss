@@ -16,8 +16,8 @@
 
 .redes__a {
     color: $color-text;
-}
 
-.redes__a:hover {
-    color: $color-accent;
+    &:hover {
+        color: $color-accent;
+    }
 }

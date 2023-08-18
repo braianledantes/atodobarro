@@ -18,9 +18,10 @@
         font-family: cursive;
         text-align: center;
     }
+
+    &:hover {
+        transition: transform .2s ease;
+        transform: scale(1.01);
+    }
 }
 
-.producto:hover {
-    transition: transform .2s ease;
-    transform: scale(1.01);
-}
