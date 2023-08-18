@@ -9,8 +9,11 @@
 - Git
 - GitHub
 
+## Anotaciones
+* Todas las páginas son responsive.
+
 ## Compilar el código
-1. Ejecutar el comando `$ npm install` para que instale todas las dependencias.
+1. Ejecutar el comando `$ npm install` para que instale todas las dependencias (en este caso no hay ninguna 🙂).
 2. Instalar SASS con `$npm install -g sass`.
 3. Luego ejecutar el comando `$sass --watch ./scss/styles.scss ./css/styles.css` para que genere los estilos por si el archivo *./scss/styles.scss* fue modificado.
 
