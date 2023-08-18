@@ -1,0 +1,17 @@
+.navbar__ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    justify-content: center;
+
+    .navbar__a {
+        text-decoration: none;
+        color: $color-text;
+    }
+
+    .navbar__a--actual {
+        color: #3F2305;
+        text-shadow: 0 1px 1px $color-accent;
+    }
+}
