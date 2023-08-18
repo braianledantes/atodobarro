@@ -5,33 +5,34 @@
 }
 
 body {
-  margin: 0;
   background-color: #F2EAD3;
+  color: #000000;
   font-family: "Permanent Marker", cursive;
   display: grid;
   grid-template-areas: "header" "main" "footer";
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #F2EAD3;
+  color: #000000;
   grid-area: header;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  background-color: #F2EAD3;
-  color: #000000;
   box-shadow: 0 0 8px 0 black;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .footer {
+  background-color: #DFD7B7;
+  color: #000000;
   grid-area: footer;
   display: flex;
   justify-content: space-between;
-  background-color: #DFD7B7;
   text-align: center;
   padding: 1.2rem 2rem;
 }
@@ -42,11 +43,10 @@ body {
   justify-content: center;
   gap: 8px;
 }
-
-.redes__a {
+.footer__redes .redes__a {
   color: #000000;
 }
-.redes__a:hover {
+.footer__redes .redes__a:hover {
   color: #3F2305;
 }
 
@@ -81,9 +81,11 @@ main {
 }
 .horarios .horarios__td:nth-child(even) {
   background-color: #F5F5F5;
+  color: black;
 }
 .horarios .horarios__td:nth-child(odd) {
   background-color: #DFD7BF;
+  color: black;
 }
 .horarios .horarios__td--vacio {
   display: none;

@@ -1,8 +1,8 @@
 .footer {
+    @include elementColor($color-secondary, $color-text);
     grid-area: footer;
     display: flex;
     justify-content: space-between;
-    background-color: $color-secondary;
     text-align: center;
     padding: 1.2rem 2rem;
 }
@@ -12,12 +12,12 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-}
 
-.redes__a {
-    color: $color-text;
+    .redes__a {
+        color: $color-text;
 
-    &:hover {
-        color: $color-accent;
+        &:hover {
+            color: $color-accent;
+        }
     }
 }

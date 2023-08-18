@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    background-color: $color-primary;
+    @include elementColor($color-primary, $color-text);
     font-family: 'Permanent Marker', cursive;
     display: grid;
     grid-template-areas:
