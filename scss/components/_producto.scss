@@ -4,7 +4,7 @@
     box-shadow: 0 3px 8px 1px gray;
     background-color: grba(223, 215, 191, .3);
     padding: 1rem 1rem 1.2rem;
-    
+    transition: transform .5s ease;
 
     .producto__img {
         display: block;
@@ -20,8 +20,7 @@
     }
 
     &:hover {
-        transition: transform .2s ease;
-        transform: scale(1.01);
+        transform: scale(1.02);
     }
 }
 

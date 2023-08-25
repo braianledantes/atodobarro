@@ -1,23 +1,12 @@
-.footer {
-    @include elementColor($color-secondary, $color-text);
-    grid-area: footer;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 1.2rem 2rem;
-}
-
-.footer__redes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-    .redes__a {
-        color: $color-text;
-
-        &:hover {
-            color: $color-accent;
-        }
+.footer-bootstrap {
+    .bi-facebook {
+        color: #3982e4 !important
     }
+
+    .bi-instagram {
+        background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
 }

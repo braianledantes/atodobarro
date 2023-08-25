@@ -8,6 +8,12 @@
     <meta name="author" content="Braian Ledantes">
     <meta name="description" content="Productos que hechos en el taller de ATODOBARRO">
     <meta name="keywords" content="atodobarro, cerámica, barro, clases, cursos, artezanías, taller">
+    <meta property="og:title" content="Productos | ATODOBARRO">
+    <meta property="og:site_name" content="ATODOBARRO">
+    <meta property="og:url" content="https://braianledantes.github.io/atodobarro/">
+    <meta property="og:description" content="Productos que hechos en el taller de ATODOBARRO">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://braianledantes.github.io/atodobarro/assets/images/logo.png">
     <!-- Titulo -->
     <title>Productos | ATODOBARRO</title>
     <!-- Favicon -->
@@ -25,21 +31,43 @@
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__logo logo" href="../index.html">
-            <img class="logo__img" src="../assets/images/logo.png" alt="logo de atodobarro">
-            <h1 class="logo__h1">ATODOBARRO</h1>
-        </a>
-        <nav class="header__navbar navbar">
-            <ul class="navbar__ul">
-                <li><a class="navbar__a" href="../index.html">Inicio</a></li>
-                <li><a class="navbar__a navbar__a--actual" href="./productos.html">Productos</a></li>
-                <li><a class="navbar__a" href="./clases.html">Clases</a></li>
-                <li><a class="navbar__a" href="./galeria.html">Galería</a></li>
-                <li><a class="navbar__a" href="./contactos.html">Contactos</a></li>
-            </ul>
+    <header class="sticky-top z-index-1 shadow">
+        <nav class="navbar navbar-expand-md ps-4 pe-4">
+            <div class="container-fluid">
+                <!-- Icono con texto -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/logo.png" alt="logo de atodobarro">
+                    <h1 class="d-inline fs-2 fw-bold align-middle ms-2">ATODOBARRO</h1>
+                </a>
+                <!-- Menu hambur -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Lista del menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./clases.html">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
         <section id="productos">
             <div class="header-section">
@@ -47,54 +75,78 @@
             </div>
             <section class="productos-list">
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-1.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-1.png"
+                        alt="Tetera y jarrón de cerámica">
+                    <p class="producto__descripcion descripcion-de-producto">Terera y jarrón</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-2.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-2.png" alt="Tazón para azucar">
+                    <p class="producto__descripcion descripcion-de-producto">Cuencos</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-3.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-3.png"
+                        alt="Cuencos tamaño mediano">
+                    <p class="producto__descripcion descripcion-de-producto">Cuencos</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-4.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-4.png"
+                        alt="Cuencos amarillos texturizados">
+                    <p class="producto__descripcion descripcion-de-producto">Tazones</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-5.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-5.png"
+                        alt="Dos vasos de cerámica color rosado">
+                    <p class="producto__descripcion descripcion-de-producto">Tazas</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-6.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-6.png"
+                        alt="Tetera y jarrón de cerámica">
+                    <p class="producto__descripcion descripcion-de-producto">Saleros</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-7.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-7.png"
+                        alt="Taza de té de cerámica">
+                    <p class="producto__descripcion descripcion-de-producto">Taza de té</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-8.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-8.png"
+                        alt="Un mate de cerámica">
+                    <p class="producto__descripcion descripcion-de-producto">Mate</p>
                 </article>
                 <article class="productos-list__producto producto">
-                    <img class="producto__img" src="../assets/images/producto-9.png" alt="Tetera y jarrón de cerámica">
-                    <p class="producto__descripcion descripcion-de-producto">Producto 1</p>
+                    <img class="producto__img" src="../assets/images/productos/producto-9.png"
+                        alt="Un mate de cerámica">
+                    <p class="producto__descripcion descripcion-de-producto">Mate</p>
                 </article>
             </section>
         </section>
     </main>
-    <footer class="footer">
-        <p class="footer__p">2023 - ©copyrigth</p>
-        <div class="footer__redes redes">
-            <a class="redes__a" href="https://www.facebook.com/mbatodobarro" target="_blank"
-                rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-            <a class="redes__a" href="https://www.instagram.com/atodobarro/" target="_blank"
-                rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+
+    <!-- Footer (Pie de pagina) -->
+    <footer class="footer-bootstrap mt-3 p-4 fs-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="footer__p mb-0">2023 - &#169;copyrigth</p>
+                </div>
+                <div class="redes col d-flex justify-content-end gap-2">
+                    <a class="redes__a" href="https://www.facebook.com/mbatodobarro" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-facebook text-dark"></i>
+                    </a>
+                    <a class="redes__a" href="https://www.instagram.com/atodobarro/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-instagram text-dark"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a56ac5b1d3.js" crossorigin="anonymous"></script>
 </body>
 

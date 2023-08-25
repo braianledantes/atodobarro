@@ -1,14 +1,19 @@
-.logo {
+.navbar-brand {
     display: flex;
     align-items: center;
     gap: 1rem;
     color: $color-text;
     text-decoration: none;
 
-    .logo__img {
+    img {
         width: 4rem;
         height: 4rem;
         padding: .2rem;
         display: inline-block;
+        transition: transform 3s ease;
+
+        &:hover {
+            transform: rotate(360deg*1.20) scale(1.5);
+        }
     }
 }
