@@ -96,11 +96,11 @@ main {
   height: 3.5rem;
 }
 
-.nav-link {
+.nav-link, #navbarNav .active {
   color: black;
 }
 
-.nav-link.active {
+.nav-link.active, #navbarNav .active {
   color: #3F2305;
   text-shadow: 0 1px 1px #3F2305;
 }
@@ -128,10 +128,10 @@ main {
   background-color: #DFD7BF;
 }
 
-#navbarNav .nav-link {
+#navbarNav .nav-link, #navbarNav .active {
   transition: all 0.2s ease;
 }
-#navbarNav .nav-link:hover {
+#navbarNav .nav-link:hover, #navbarNav .active:hover {
   animation-name: tambalearTexto;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -146,6 +146,10 @@ main {
   100% {
     transform: rotate(-2deg);
   }
+}
+#navbarNav .active {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .header-section {
