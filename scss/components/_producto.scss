@@ -5,6 +5,8 @@
     background-color: grba(223, 215, 191, .3);
     padding: 1rem 1rem 1.2rem;
     transition: transform .5s ease;
+    text-decoration: none;
+    color: $color-text;
 
     .producto__img {
         display: block;

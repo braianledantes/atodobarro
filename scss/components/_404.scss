@@ -1,0 +1,17 @@
+.error-404 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+        box-sizing: border-box;
+        text-align: center;
+        background-color: $color-secondary;
+        color: $color-accent;
+        padding: 2rem 3rem;
+        border: 5px solid $color-accent;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+    }
+}

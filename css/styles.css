@@ -23,7 +23,7 @@ body {
 
 main {
   grid-area: main;
-  min-height: 78.5vh;
+  min-height: 81vh;
   background-color: #F2EAD3;
 }
 
@@ -166,6 +166,8 @@ main {
   background-color: grba(223, 215, 191, 0.3);
   padding: 1rem 1rem 1.2rem;
   transition: transform 0.5s ease;
+  text-decoration: none;
+  color: #000000;
 }
 .producto .producto__img {
   display: block;
@@ -265,6 +267,23 @@ main {
 }
 .navbar-brand img:hover {
   transform: rotate(432deg) scale(1.5);
+}
+
+.error-404 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-404 .text {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #DFD7B7;
+  color: #3F2305;
+  padding: 2rem 3rem;
+  border: 5px solid #3F2305;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
 }
 
 @media screen and (min-width: 768px) {
